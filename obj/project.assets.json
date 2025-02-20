@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "FluentValidation/12.0.0-preview1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/9.0.2": {
         "type": "package",
         "dependencies": {
@@ -110,10 +123,45 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Library.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Library.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Communication.dll": {}
+        }
+      },
+      "Library.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Library.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.Exception.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/12.0.0-preview1": {
+      "sha512": "sFp+S7r98V0RQd6Ws9ecFTneWGGMK69XA4Wq+2ZxuNzoRTcs6AbZFyb+pfCwOUx4zgJiKf6BjcFSQrrAaxn+Dw==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0-preview1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0-preview1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/9.0.2": {
       "sha512": "JUndpjRNdG8GvzBLH/J4hen4ehWaPcshtiQ6+sUs1Bcj3a7dOsmWpDloDlpPeMOVSlhHwUJ3Xld0ClZjsFLgFQ==",
       "type": "package",
@@ -461,10 +509,23 @@
         "swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Library.Communication/1.0.0": {
+      "type": "project",
+      "path": "../Library.Communication/Library.Communication.csproj",
+      "msbuildProject": "../Library.Communication/Library.Communication.csproj"
+    },
+    "Library.Exception/1.0.0": {
+      "type": "project",
+      "path": "../Library.Exception/Library.Exception.csproj",
+      "msbuildProject": "../Library.Exception/Library.Exception.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "FluentValidation >= 12.0.0-preview1",
+      "Library.Communication >= 1.0.0",
+      "Library.Exception >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.2",
       "Swashbuckle.AspNetCore >= 7.2.0"
     ]
@@ -500,7 +561,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj": {
+              "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj"
+            },
+            "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj": {
+              "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -519,6 +587,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0-preview1, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.2, )"

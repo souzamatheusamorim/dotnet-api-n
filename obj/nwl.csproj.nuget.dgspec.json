@@ -4,14 +4,14 @@
     "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj": {
+    "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj",
-        "projectName": "nwl",
-        "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj",
+        "projectUniqueName": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj",
+        "projectName": "Library.Communication",
+        "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj",
         "packagesPath": "C:\\Users\\passo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\obj\\",
+        "outputPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,7 +49,148 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj",
+        "projectName": "Library.Exception",
+        "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj",
+        "packagesPath": "C:\\Users\\passo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\passo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj",
+        "projectName": "nwl",
+        "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\nwl.csproj",
+        "packagesPath": "C:\\Users\\passo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\nwl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\passo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj": {
+                "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Communication\\Library.Communication.csproj"
+              },
+              "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj": {
+                "projectPath": "C:\\Users\\passo\\Desktop\\dotnet\\nwl\\Library.Exception\\Library.Exception.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0-preview1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"

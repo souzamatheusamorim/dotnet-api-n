@@ -1,21 +1,27 @@
 [
   {
-    "ContainingType": "nwl.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "nwl.Controllers.UsersController",
+    "Method": "Create",
+    "RelativePath": "Users",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Library.Communication.Requests.RequestUserJson",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[nwl.WeatherForecast, nwl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Library.Communication.Responses.ResponseRegisteredUserJson",
         "MediaTypes": [
           "text/plain",
           "application/json",
           "text/json"
         ],
-        "StatusCode": 200
+        "StatusCode": 201
       }
     ]
   }

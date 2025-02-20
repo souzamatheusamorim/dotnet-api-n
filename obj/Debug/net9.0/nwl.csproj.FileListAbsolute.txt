@@ -35,3 +35,6 @@ C:\Users\passo\Desktop\dotnet\nwl\nwl\obj\Debug\net9.0\refint\nwl.dll
 C:\Users\passo\Desktop\dotnet\nwl\nwl\obj\Debug\net9.0\nwl.pdb
 C:\Users\passo\Desktop\dotnet\nwl\nwl\obj\Debug\net9.0\nwl.genruntimeconfig.cache
 C:\Users\passo\Desktop\dotnet\nwl\nwl\obj\Debug\net9.0\ref\nwl.dll
+C:\Users\passo\Desktop\dotnet\nwl\nwl\bin\Debug\net9.0\Library.Communication.dll
+C:\Users\passo\Desktop\dotnet\nwl\nwl\bin\Debug\net9.0\Library.Communication.pdb
+C:\Users\passo\Desktop\dotnet\nwl\nwl\obj\Debug\net9.0\nwl.sourcelink.json
